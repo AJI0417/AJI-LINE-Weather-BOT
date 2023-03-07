@@ -37,8 +37,8 @@ def callback():
 
 
 @app.route('/')
-def OK():
-    return render_template('abc.html')
+def index():
+    return render_template('index.html')
 
 
 @handler.add(MessageEvent, message=TextMessage)
